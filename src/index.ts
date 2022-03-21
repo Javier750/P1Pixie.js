@@ -1,4 +1,4 @@
-import { Application, Container, Loader, Sprite } from 'pixi.js'
+import { Application, Container, Loader, Point, Sprite } from 'pixi.js'
 
 const app = new Application({
 	view: document.getElementById("pixi-canvas") as HTMLCanvasElement,
@@ -9,6 +9,8 @@ const app = new Application({
 	height: 720
 });
 
+
+//Codigo para Adaptar a la Pantalla.
 window.addEventListener("resize", ()=>{
 	const scaleX = window.innerWidth / app.screen.width;
 	const scaleY = window.innerHeight / app.screen.height;
@@ -37,7 +39,7 @@ Loader.shared.add({url: "./santahat.png", name: "Hat"})
 
 Loader.shared.onComplete.add(()=>{
 	const gollum: Sprite = Sprite.from("Gollum");
-	//console.log("Hola World!", clampy.width, clampy.height);
+
 
 	//gollum.position.set(200 , 150);
 	//gollum.scale.set(1 , 1)
@@ -45,7 +47,7 @@ Loader.shared.onComplete.add(()=>{
 	const hat: Sprite = Sprite.from("Hat");
 
 	//hat.scale.set(0.5, 0.5);
-	//hat.position.set(230, 145);
+	hat.position.set(30, 0);
 
 	const gollumWithHat: Container = new Container();
 
@@ -53,9 +55,15 @@ Loader.shared.onComplete.add(()=>{
 	gollumWithHat.addChild(hat);
 
 	gollumWithHat.scale.set(1);
-
-	gollumWithHat.x = 200;
+	gollumWithHat.x = 400;
 	gollumWithHat.y = 150;
+
+	console.log(hat.toGlobal(new Point()));
+	console.log(hat.parent.toGlobal(hat.position));
+
+	//640 * 360
+	//const aux = hat.parent.toLocal(new Point(0,0));
+	//hat.position.copyFrom(aux);
 
 	app.stage.addChild(gollumWithHat);
 
