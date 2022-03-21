@@ -57,6 +57,8 @@ Loader.shared.onComplete.add(()=>{
 	gollumWithHat.scale.set(1);
 	gollumWithHat.x = 400;
 	gollumWithHat.y = 150;
+	//Rotacion de Objeto
+	gollumWithHat.rotation += -.36;
 
 	console.log(hat.toGlobal(new Point()));
 	console.log(hat.parent.toGlobal(hat.position));
