@@ -13,4 +13,9 @@ export const assets = [
     {url: "./Animaciones/Zombie/Correr/Run8.png", name: "ZRun8"},
     {url: "./Animaciones/Zombie/Correr/Run9.png", name: "ZRun9"},
     {url: "./Animaciones/Zombie/Correr/Run10.png", name: "ZRun10"}
+    
+    
+   // {url: "./Animaciones/Zombie/Correr/Run10.png", name: "Panel"}
+
+
 ];

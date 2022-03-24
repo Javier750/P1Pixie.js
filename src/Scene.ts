@@ -1,4 +1,4 @@
-import { AnimatedSprite, Container, Graphics, Text, Texture } from "pixi.js";
+import { AnimatedSprite, Container, Text, Texture } from "pixi.js";
 import { GollumHat } from "./GollumHat";
 
 export class Scene extends Container{
@@ -48,7 +48,12 @@ export class Scene extends Container{
         
         //Text
         const myText: Text = new Text("Hola Mundo", {fontSize: 52, fill: 0x37EEEB});
+        myText.x = 500;
         this.addChild(myText);
+
+        // Nine-Slice Plane
+
+        
 
 
     };
