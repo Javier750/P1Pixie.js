@@ -37,20 +37,16 @@ export class Scene extends Container{
         this.addChild(zombieAnimated);
 
         //Menu
-
         const menu1: Menu = new Menu();
         menu1.scale.set(1);
         this.addChild(menu1);
-
-        
+  
         //Text
         const myText: Text = new Text("Menu de Prueba", {fontSize: 52, fill: 0x37EEEB});
         myText.x = 450;
         this.addChild(myText);
 
         // Nine-Slice Plane
-
-        
 
     };
 
