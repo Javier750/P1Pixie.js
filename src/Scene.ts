@@ -48,7 +48,6 @@ export class Scene extends Container{
 
         
 
-
     };
 
 };
