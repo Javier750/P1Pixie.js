@@ -1,5 +1,6 @@
 
 export const assets = [
+    
     {url: "./Animaciones/Zombie/ZombieStand.png", name: "Gollum"},
     {url: "./santahat.png", name: "Hat"},
     
@@ -12,10 +13,17 @@ export const assets = [
     {url: "./Animaciones/Zombie/Correr/Run7.png", name: "ZRun7"},
     {url: "./Animaciones/Zombie/Correr/Run8.png", name: "ZRun8"},
     {url: "./Animaciones/Zombie/Correr/Run9.png", name: "ZRun9"},
-    {url: "./Animaciones/Zombie/Correr/Run10.png", name: "ZRun10"}
+    {url: "./Animaciones/Zombie/Correr/Run10.png", name: "ZRun10"},
     
     
-   // {url: "./Animaciones/Zombie/Correr/Run10.png", name: "Panel"}
+    {url: "./ui/fondo1.png", name: "Fondo"},
+    {url: "./ui/menu.png", name: "Menu"},
+    {url: "./ui/exit.png", name: "Exit"},
+    {url: "./ui/restart.png", name: "Restart"},
+    {url: "./ui/gameover.png", name: "GameOver"},
+    {url: "./ui/money.png", name: "Money"},
+    {url: "./ui/facebook.png", name: "Facebook"},
+    {url: "./ui/red.png", name: "Red"}
 
 
 ];

@@ -30,24 +30,17 @@ export class Scene extends Container{
             true
 
         );
-        zombieAnimated.x = 500;
+        zombieAnimated.x = 100;
         zombieAnimated.y = 110;
         zombieAnimated.play();
         zombieAnimated.animationSpeed = 0.25;
         this.addChild(zombieAnimated);
 
-        /*
-        const myGraph: Graphics = new Graphics();
+        //Menu
 
-        myGraph.lineStyle({color: 0xFF00FF, width: 10, alpha:1});
-        myGraph.moveTo(1280/2,720/2);
-        myGraph.lineTo(1000,700);
-        myGraph.lineTo(1000,350);
-        this.addChild(myGraph);
-        */
-        
+
         //Text
-        const myText: Text = new Text("Hola Mundo", {fontSize: 52, fill: 0x37EEEB});
+        const myText: Text = new Text("Menu Prueba", {fontSize: 52, fill: 0x37EEEB});
         myText.x = 500;
         this.addChild(myText);
 
