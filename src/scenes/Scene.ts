@@ -1,5 +1,5 @@
 import { AnimatedSprite, Container, Text, Texture } from "pixi.js"
-import { GollumHat } from "./GollumHat"
+import { GollumHat } from "../game/GollumHat"
 import { Menu } from "./Menu"
 
 export class Scene extends Container{
@@ -7,7 +7,6 @@ export class Scene extends Container{
     constructor()
     {
         super();
-
         const gollumWithHat: GollumHat = new GollumHat();
         gollumWithHat.scale.set(.9);
         gollumWithHat.x = 1000;
@@ -35,7 +34,7 @@ export class Scene extends Container{
         zombieAnimated.play();
         zombieAnimated.animationSpeed = 0.20;
         this.addChild(zombieAnimated);
-
+    
         //Menu
         const menu1: Menu = new Menu();
         menu1.scale.set(1);
